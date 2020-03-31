@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Open Sans";
+}
+
+p{
+    line-height: 1.5;
+    font-size: 0.75em;
+}
+h1{
+    font-size: 3.25em;
+    line-height: 1.25;
+    padding-bottom: 2.5%;
+    font-weight: normal;
+}
+
+h2, h3, p{
+    padding-bottom: 5%;
+}
+
+h4{
+    padding-bottom: 5%;
+    font-size: 0.75em;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+/* Partie header */
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 153, 107);
+    padding: 20% 10%;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(247, 247, 247);
+}
+
+#header-box-texte{
+    width: 50%;
+}
+
+/* Partie "Start something new" */
+#section1{
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+    padding: 10%;
+}
+
+/* Partie "box features" */
+#section2{
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+    padding: 10%;
+    color: rgb(247, 247, 247);
+}
+
+#section2-box1{
+    background-color: #f4979f;
+    padding: 7.5%;
+}
+
+#section2-box2{
+    background-color: #605f7f;
+    padding: 7.5%;
+}
+
+#section2-box3{
+    background-color: grey;
+    padding: 7.5%;
+}
+
+#section2-box4{
+    background-color: rgb(177, 177, 109);
+    padding: 7.5%;
+}
+
+#section2-box5{
+    background-color: #84c99d;
+    padding: 7.5%;
+}
+
+
+/* Partie "A look at the details" */
+#section3{
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+    padding: 10%;
+}
+
+
+/* Partie "More power behind every pixel." */
+#section4{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkcyan;
+    padding: 20% 10%;
+    color: rgb(247, 247, 247);
+}
+
+#section4 h2{
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+
+#section5{
+    width: 100vw;
+    background-color: #84c99d;
+    padding: 10%;
+    color: rgb(247, 247, 247);
+}
+
+#section6{
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+    padding: 10%;
+}
+
+.section6-box{
+    padding: 10% 5%;
+}
+
+#section6 button{
+    padding: 2.5% 5%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 0 5%;
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section6-button-green{
+    background-color:#81ca9a;
+}
+
+#section6-button-grey{
+    background-color:#c5c5c5;
+    font-size: 0.5em;
+}
+
+#section6-button-pink{
+    background-color: #bc8ac1;
+    font-size: 0.5em;
+}
+
+#footer{
+    width: 100vw;
+    background-color: #182432;
+    padding: 20% 10% 30%;
+    color: rgb(247, 247, 247);
+}
+
+input[type="email"]{
+    width: 90%;
+    height: 5vh;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+#footer-email-line{
+    display: flex;
+    flex-direction: row;
+}
+
+#sous-texte-mail{
+    font-size: 0.60em;
+    color: gray;
+    padding: 2% 0 5%;
+}
+
+#email-button{
+    width: 10%;
+    height: 5vh;
+    border: none;
+    background-color: #81ca9a;
+    cursor: pointer;
+    outline: none;
+}
+span{
+    font-weight: bold;
+    font-size: 3;
+    color: rgb(247, 247, 247);
+}
+
+#footer-ressources{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer a{
+    font-size: 0.75em;
+}
+
+.footer-ressources-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
