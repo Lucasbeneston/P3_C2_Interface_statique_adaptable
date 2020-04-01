@@ -43,14 +43,22 @@ a{
     width: 100vw;
     height: 100vh;
     background-color: rgb(15, 153, 107);
-    padding: 20% 10%;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     color: rgb(247, 247, 247);
+    background : no-repeat center / cover;
+    background-image: url("../mastehead.jpg")
+}
+
+#logo{
+    height: 100%;
+    padding: 2.5% 5%;
 }
 
 #header-box-texte{
     width: 50%;
+    padding: 20% 10%;
 }
 
 /* Partie "Start something new" */
@@ -81,11 +89,15 @@ a{
 #section2-box3{
     background-color: grey;
     padding: 7.5%;
+    background: no-repeat center / cover;
+    background-image: url("../box-bg.jpg")
 }
 
 #section2-box4{
     background-color: rgb(177, 177, 109);
     padding: 7.5%;
+    background: no-repeat center / cover;
+    background-image: url("../box-bg-lg.jpg")
 }
 
 #section2-box5{
