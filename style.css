@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+   
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     font-family: "Open Sans";
 }
@@ -24,6 +24,7 @@ h1{
 
 h2, h3, p{
     padding-bottom: 5%;
+    font-weight: normal;
 }
 
 h4{
@@ -48,8 +49,9 @@ a{
     justify-content: space-between;
     color: rgb(247, 247, 247);
     background : no-repeat center / cover;
-    background-image: url("../mastehead.jpg")
+    background-image: url("../images/mastehead.jpg")
 }
+
 
 #logo{
     height: 100%;
@@ -57,7 +59,7 @@ a{
 }
 
 #header-box-texte{
-    width: 50%;
+    width: 70%;
     padding: 20% 10%;
 }
 
@@ -90,14 +92,14 @@ a{
     background-color: grey;
     padding: 7.5%;
     background: no-repeat center / cover;
-    background-image: url("../box-bg.jpg")
+    background-image: url("../images/box-bg.jpg")
 }
 
 #section2-box4{
     background-color: rgb(177, 177, 109);
     padding: 7.5%;
     background: no-repeat center / cover;
-    background-image: url("../box-bg-lg.jpg")
+    background-image: url("../images/box-bg-lg.jpg")
 }
 
 #section2-box5{
@@ -110,29 +112,28 @@ a{
 #section3{
     width: 100vw;
     background-color: rgb(247, 247, 247);
-    padding: 10%;
+    padding: 10% 10% 20%;
 }
 
 
 /* Partie "More power behind every pixel." */
 #section4{
     width: 100vw;
-    height: 100vh;
-    background-color: darkcyan;
     padding: 20% 10%;
     color: rgb(247, 247, 247);
+    background: no-repeat / cover;
+    background-image: url("../images/full-image.jpg")
 }
 
 #section4 h2{
-    font-size: 3.5em;
+    font-size: 3.25em;
     font-weight: normal;
 }
-
 
 #section5{
     width: 100vw;
     background-color: #84c99d;
-    padding: 10%;
+    padding: 20% 10%;
     color: rgb(247, 247, 247);
 }
 
@@ -172,10 +173,11 @@ a{
     font-size: 0.5em;
 }
 
+/* Partie footer */
 #footer{
     width: 100vw;
     background-color: #182432;
-    padding: 20% 10% 30%;
+    padding: 15% 10%;
     color: rgb(247, 247, 247);
 }
 
@@ -226,4 +228,112 @@ span{
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+/*** RESPONSIVE ***/
+/* Tablette */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #section1, #section3-container, #section5-container, #section6-container, #section2-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section1-container-paragraphe, .section3-box, .section6-box, #section4-container{
+        width: 47.5%;
+    }
+
+    .section5-container-box{
+        width: 30%;
+    }
+    
+    #section2-box1, #section2-box2, #section2-box3, #section2-box4{
+        width: 50%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    #sous-texte-mail{
+        font-size: 0.45em;
+    }
+
+    #header-box-texte{
+        width: 70%;
+        padding: 20% 20%;
+    }
+
+    #section1, #section3, #section5, #footer{
+        padding: 5% 20%;
+    }
+
+    #section2, #section6{
+        padding: 0% 20%;
+    }
+
+    #section4{
+        padding: 15% 20%;
+    }
+
+    #section1, #section3-container, #section5-container, #section6-container, #footer-container1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section3-box{
+        width: 22.5%;
+    }
+
+    .section1-container-paragraphe, .section6-box, #section4-container, #footer-texte, #footer-email{
+        width: 47.5%;
+    }
+
+    .section5-container-box{
+        width: 30%;
+    }
+
+    #section2-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #section2-box1{
+        grid-column: 1/2;
+        grid-row: 1;
+        padding: 10%;
+    }
+
+    #ection2-box2{
+        grid-column: 2/3;
+        grid-row: 1;
+        padding: 10%;
+    }
+
+    #section2-box3{
+        grid-column: 3/4;
+        grid-row: 1;
+        padding: 10%;
+    }
+
+    #section2-box4{
+        grid-column: 1/3;
+        grid-row: 2;
+        padding: 5%;
+    }
+
+    #section2-box5{
+        grid-column: 3/4;
+        grid-row: 2;
+        padding: 10%;
+    }
+}
+
+/* Large desktop */
+@media screen and (min-width: 1280px){
+
 }
