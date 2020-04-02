@@ -233,23 +233,28 @@ span{
 /*** RESPONSIVE ***/
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    #section1, #section3-container, #section5-container, #section6-container, #section2-container{
+    #section1, #section2, #section3-container-box, #section5-container, #section6{
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .section1-container-paragraphe, .section3-box, .section6-box, #section4-container{
+
+    #section2-box1, #section2-box2, #section2-box3, #section2-box4{
+        width: 50%;
+    }
+
+    .section1-paragraphe, .section3-box, .section6-box{
         width: 47.5%;
     }
 
-    .section5-container-box{
-        width: 30%;
+    #section4{
+        padding: 20% 50% 20% 10%;
     }
-    
-    #section2-box1, #section2-box2, #section2-box3, #section2-box4{
-        width: 50%;
+
+    .section5-box{
+        width: 30%;
     }
 }
 
@@ -273,10 +278,10 @@ span{
     }
 
     #section4{
-        padding: 15% 20%;
+        padding: 15% 50% 15% 20%;
     }
 
-    #section1, #section3-container, #section5-container, #section6-container, #footer-container1{
+    #section1, #section3-container-box, #section5-container, #section6, #footer-container-email{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -288,15 +293,15 @@ span{
         width: 22.5%;
     }
 
-    .section1-container-paragraphe, .section6-box, #section4-container, #footer-texte, #footer-email{
+    .section1-paragraphe, .section6-box, #footer-texte, #footer-email{
         width: 47.5%;
     }
 
-    .section5-container-box{
+    .section5-box{
         width: 30%;
     }
 
-    #section2-container{
+    #section2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -331,9 +336,4 @@ span{
         grid-row: 2;
         padding: 10%;
     }
-}
-
-/* Large desktop */
-@media screen and (min-width: 1280px){
-
 }
