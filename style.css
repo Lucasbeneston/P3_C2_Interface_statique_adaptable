@@ -9,6 +9,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     font-family: "Open Sans";
+    background-color: rgb(247, 247, 247);
 }
 
 p{
@@ -43,7 +44,6 @@ a{
 #header{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(15, 153, 107);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,14 +69,12 @@ a{
 /* Partie "Start something new" */
 #section1{
     width: 100vw;
-    background-color: rgb(247, 247, 247);
     padding: 10%;
 }
 
 /* Partie "box features" */
 #section2{
     width: 100vw;
-    background-color: rgb(247, 247, 247);
     padding: 10%;
     color: rgb(247, 247, 247);
 }
@@ -114,7 +112,6 @@ a{
 /* Partie "A look at the details" */
 #section3{
     width: 100vw;
-    background-color: rgb(247, 247, 247);
     padding: 10% 10% 20%;
 }
 
@@ -124,7 +121,8 @@ a{
     width: 100vw;
     padding: 20% 10%;
     color: rgb(247, 247, 247);
-    background: no-repeat / cover;
+    background: no-repeat;
+    background-size: cover;
     background-image: url("../images/full-image.jpg")
 }
 
@@ -133,6 +131,7 @@ a{
     font-weight: normal;
 }
 
+/* SECTION 5 */
 #section5{
     width: 100vw;
     background-color: #84c99d;
@@ -140,9 +139,9 @@ a{
     color: rgb(247, 247, 247);
 }
 
+/* SECTION 6 */
 #section6{
     width: 100vw;
-    background-color: rgb(247, 247, 247);
     padding: 10%;
 }
 
@@ -213,7 +212,7 @@ input[type="email"]{
 }
 span{
     font-weight: bold;
-    font-size: 3;
+    font-size: 2em;
     color: rgb(247, 247, 247);
 }
 
