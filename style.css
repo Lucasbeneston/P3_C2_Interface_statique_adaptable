@@ -40,21 +40,32 @@ a{
     font-size: 0.85em;
 }
 
+/* Nav + Logo */
+nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 2.5%;
+}
+
+nav p{
+    padding: 0% 15%;
+    font-size: 2.25em;
+    font-style: italic;
+    font-family: none;
+    color: rgb(247, 247, 247);
+}
+
 /* Partie header */
 #header{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: rgb(247, 247, 247);
     background : no-repeat center / cover;
     background-image: url("../images/mastehead.jpg")
-}
-
-#logo{
-    height: 100%;
-    padding: 2.5% 5%;
 }
 
 #header-box-texte{
