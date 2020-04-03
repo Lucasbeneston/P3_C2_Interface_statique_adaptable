@@ -65,7 +65,7 @@ nav p{
     justify-content: flex-end;
     color: rgb(247, 247, 247);
     background : no-repeat center / cover;
-    background-image: url("../images/mastehead.jpg")
+    background-image: url("../images/mastehead.jpg");
 }
 
 #header-box-texte{
@@ -104,14 +104,14 @@ nav p{
     background-color: grey;
     padding: 7.5%;
     background: no-repeat center / cover;
-    background-image: url("../images/box-bg.jpg")
+    background-image: url("../images/box-bg.jpg");
 }
 
 #section2-box4{
     background-color: rgb(177, 177, 109);
     padding: 7.5%;
     background: no-repeat center / cover;
-    background-image: url("../images/box-bg-lg.jpg")
+    background-image: url("../images/box-bg-lg.jpg");
 }
 
 #section2-box5{
@@ -134,7 +134,7 @@ nav p{
     color: rgb(247, 247, 247);
     background: no-repeat;
     background-size: cover;
-    background-image: url("../images/full-image.jpg")
+    background-image: url("../images/full-image.jpg");
 }
 
 #section4 h2{
