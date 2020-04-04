@@ -41,7 +41,7 @@ a{
     font-size: 0.85em;
 }
 
-/* Nav + Logo */
+/*** PARTIE "NAVIGATION + LOGO" ***/
 nav{
     display: flex;
     position: absolute;
@@ -57,7 +57,7 @@ nav p{
     color: rgb(247, 247, 247);
 }
 
-/* Partie header */
+/*** PARTIE "HEADER = PHOTO + TEXTE H1" ***/
 #header{
     width: 100vw;
     height: 100vh;
@@ -67,68 +67,80 @@ nav p{
     color: rgb(247, 247, 247);
     background : no-repeat center / cover;
     background-image: url("./images/mastehead.jpg");
+    background-color: teal; /* Permet d'afficher un background de couleur si l'image ne se charge pas */
 }
 
+/* Sous partie avec le texte */
 #header-box-texte{
     width: 70%;
     padding: 20% 10%;
 }
 
+/* Sous partie avec la photo de l'iphone */
 #photo-iphone{
     display: none;
 }
 
-/* Partie "Start something new" */
+
+/*** SECTION 1 "Start something new" ***/
 #section1{
     width: 100vw;
     padding: 10%;
 }
 
-/* Partie "box features" */
+
+/*** SECTION 2 avec les différentes box de couleur ***/
 #section2{
     width: 100vw;
     padding: 10%;
     color: rgb(247, 247, 247);
 }
 
+/* Box 1 "Design quality" */
 #section2-box1{
     background-color: #f4979f;
     padding: 7.5%;
 }
 
+/* Box 2 "Built to last" */
 #section2-box2{
     background-color: #605f7f;
     padding: 7.5%;
 }
 
+/* Box 3 "Our clients" */
 #section2-box3{
     background-color: grey;
     padding: 7.5%;
     background: no-repeat center / cover;
     background-image: url("./images/box-bg.jpg");
+    background-color: teal; /* Permet d'afficher un background de couleur si l'image ne se charge pas */
 }
 
+/* Box 4 "Sign up & see why" */
 #section2-box4{
     background-color: rgb(177, 177, 109);
     padding: 7.5%;
     background: no-repeat center / cover;
     background-image: url("./images/box-bg-lg.jpg");
+    background-color: rgb(204, 148, 27); /* Permet d'afficher un background de couleur si l'image ne se charge pas */
 }
 
+/* Box 5 "Perfect picture" */
 #section2-box5{
     background-color: #84c99d;
     padding: 7.5%;
 }
 
 
-/* Partie "A look at the details" */
+/*** SECTION 3 "A look at the details" ***/
 #section3{
     width: 100vw;
     padding: 10% 10% 20%;
 }
 
 
-/* Partie "More power behind every pixel." */
+/*** SECTION 4 "More power behind every pixel." ***/
 #section4{
     width: 100vw;
     padding: 20% 10%;
@@ -136,6 +148,7 @@ nav p{
     background: no-repeat;
     background-size: cover;
     background-image: url("./images/full-image.jpg");
+    background-color: teal; /* Permet d'afficher un background de couleur si l'image ne se charge pas */
 }
 
 #section4 h2{
@@ -143,7 +156,8 @@ nav p{
     font-weight: normal;
 }
 
-/* SECTION 5 */
+
+/*** SECTION 5 "Reasons to get onboard" ***/
 #section5{
     width: 100vw;
     background-color: #84c99d;
@@ -151,7 +165,8 @@ nav p{
     color: rgb(247, 247, 247);
 }
 
-/* SECTION 6 */
+
+/*** SECTION 6 avec les cartes "Go it solo" et "Team plan" ***/
 #section6{
     width: 100vw;
     padding: 10%;
@@ -197,7 +212,8 @@ nav p{
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 }
 
-/* Partie footer */
+
+/*** PARTIE FOOTER ***/
 #footer{
     width: 100vw;
     background-color: #182432;
@@ -205,6 +221,7 @@ nav p{
     color: rgb(247, 247, 247);
 }
 
+/** Sous partie avec l'email **/
 input[type="email"]{
     width: 90%;
     height: 5vh;
@@ -232,12 +249,15 @@ input[type="email"]{
     cursor: pointer;
     outline: none;
 }
+
+/* Cible l'icone de validation du bouton */
 span{
     font-weight: bold;
     font-size: 2em;
     color: rgb(247, 247, 247);
 }
 
+/** Sous partie avec les 3 colonnes **/
 #footer-ressources{
     display: flex;
     flex-direction: row;
@@ -254,9 +274,11 @@ span{
     flex: 1;
 }
 
-/*** RESPONSIVE ***/
-/* Tablette */
+
+/*** PARTIE RESPONSIVE ***/
+/** Tablette **/
 @media screen and (min-width: 768px) and (max-width: 1024px){
+    /* Rendre flexible des sections concernées */
     #section1, #section3-container-box, #section5-container, #section6{
         display: flex;
         flex-direction: row;
@@ -268,15 +290,7 @@ span{
     .section1-paragraphe, .section3-box, .section6-box{
         width: 47.5%;
     }
-
-    #section4{
-        padding: 20% 50% 20% 10%;
-    }
-
-    .section5-box{
-        width: 30%;
-    }
-
+        /** Utilisation d'une grid pour la section 2 avec les box de couleur **/
     #section2-container-box{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -312,10 +326,19 @@ span{
         grid-row: 3;
         padding: 5%;
     }
+
+    #section4{
+        padding: 20% 50% 20% 10%;
+    }
+
+    .section5-box{
+        width: 30%;
+    }
 }
 
-/* Desktop */
+/** Desktop **/
 @media screen and (min-width: 1024px){
+    /* Permet d'afficher l'iphone sur ordinateur */
     #photo-iphone{
         display: block;
         position: absolute;
@@ -324,27 +347,12 @@ span{
         width: 40%;
     }
 
-    #sous-texte-mail{
-        font-size: 0.45em;
-    }
-
     #header-box-texte{
         width: 70%;
         padding: 20% 20%;
     }
 
-    #section1, #section3, #section5, #section6, #footer{
-        padding: 5% 20%;
-    }
-
-    #section2{
-        padding: 0% 20%;
-    }
-
-    #section4{
-        padding: 15% 50% 15% 20%;
-    }
-
+    /* Rendre flexible des sections concernées */
     #section1, #section3-container-box, #section5-container, #section6, #footer-container-email{
         display: flex;
         flex-direction: row;
@@ -353,51 +361,68 @@ span{
         justify-content: space-between;
     }
 
-    .section3-box{
-        width: 22.5%;
+    #section1, #section3, #section5, #section6, #footer{
+        padding: 5% 20%;
     }
 
     .section1-paragraphe, .section6-box, #footer-texte, #footer-email{
         width: 47.5%;
     }
 
+    #section2{
+        padding: 0% 20%;
+    }
+
+        /** Utilisation d'une grid pour la section 2 avec les box de couleur **/
+        #section2-container-box{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    
+        #section2-box1{
+            grid-column: 1/2;
+            grid-row: 1;
+            padding: 10%;
+        }
+    
+        #section2-box2{
+            grid-column: 2/3;
+            grid-row: 1;
+            padding: 10%;
+        }
+    
+        #section2-box3{
+            grid-column: 3/4;
+            grid-row: 1;
+            padding: 10%;
+        }
+    
+        #section2-box4{
+            grid-column: 1/3;
+            grid-row: 2;
+            padding: 5%;
+        }
+    
+        #section2-box5{
+            grid-column: 3/4;
+            grid-row: 2;
+            padding: 10%;
+        }
+
+    .section3-box{
+        width: 22.5%;
+    }
+
+    #section4{
+        padding: 15% 50% 15% 20%;
+    }
+
     .section5-box{
         width: 30%;
     }
 
-    #section2-container-box{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    #section2-box1{
-        grid-column: 1/2;
-        grid-row: 1;
-        padding: 10%;
-    }
-
-    #section2-box2{
-        grid-column: 2/3;
-        grid-row: 1;
-        padding: 10%;
-    }
-
-    #section2-box3{
-        grid-column: 3/4;
-        grid-row: 1;
-        padding: 10%;
-    }
-
-    #section2-box4{
-        grid-column: 1/3;
-        grid-row: 2;
-        padding: 5%;
-    }
-
-    #section2-box5{
-        grid-column: 3/4;
-        grid-row: 2;
-        padding: 10%;
+    #sous-texte-mail{
+        font-size: 0.45em;
     }
 }
