@@ -19,8 +19,8 @@ h1{
     font-weight: normal;
 }
 
-h2{
-    font-size: 2em;
+#section2 h2{
+    font-size: 1.25em;
 }
 
 h2, h3, p{
