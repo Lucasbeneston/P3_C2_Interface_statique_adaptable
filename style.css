@@ -12,16 +12,15 @@ body{
     background-color: rgb(247, 247, 247);
 }
 
-p{
-    line-height: 1.5;
-    font-size: 0.75em;
-}
-
 h1{
     font-size: 3.25em;
     line-height: 1.25;
     padding-bottom: 2.5%;
     font-weight: normal;
+}
+
+h2{
+    font-size: 2em;
 }
 
 h2, h3, p{
@@ -31,6 +30,11 @@ h2, h3, p{
 
 h4{
     padding-bottom: 5%;
+    font-size: 0.75em;
+}
+
+p{
+    line-height: 1.5;
     font-size: 0.75em;
 }
 
@@ -88,6 +92,10 @@ nav p{
     padding: 10%;
 }
 
+#section1 p{
+    color: grey;
+}
+
 
 /*** SECTION 2 avec les différentes box de couleur ***/
 #section2{
@@ -137,6 +145,15 @@ nav p{
 #section3{
     width: 100vw;
     padding: 10% 10% 20%;
+}
+
+#section3 h3{
+    color: rgb(85, 85, 85);
+    font-size: 0.9em;
+}
+
+#section3 p{
+    color: grey;
 }
 
 
