@@ -296,7 +296,10 @@ span{
 /** Tablette **/
 @media screen and (min-width: 768px) and (max-width: 1024px){
     /* Rendre flexible des sections concernées */
-    #section1, #section3-container-box, #section5-container, #section6{
+    #section1, 
+    #section3-container-box, 
+    #section5-container, 
+    #section6{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -304,7 +307,9 @@ span{
         justify-content: space-between;
     }
 
-    .section1-paragraphe, .section3-box, .section6-box{
+    .section1-paragraphe, 
+    .section3-box, 
+    .section6-box{
         width: 47.5%;
     }
         /** Utilisation d'une grid pour la section 2 avec les box de couleur **/
@@ -370,7 +375,11 @@ span{
     }
 
     /* Rendre flexible des sections concernées */
-    #section1, #section3-container-box, #section5-container, #section6, #footer-container-email{
+    #section1, 
+    #section3-container-box, 
+    #section5-container, 
+    #section6, 
+    #footer-container-email{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -378,11 +387,18 @@ span{
         justify-content: space-between;
     }
 
-    #section1, #section3, #section5, #section6, #footer{
+    #section1, 
+    #section3, 
+    #section5, 
+    #section6, 
+    #footer{
         padding: 5% 20%;
     }
 
-    .section1-paragraphe, .section6-box, #footer-texte, #footer-email{
+    .section1-paragraphe, 
+    .section6-box, 
+    #footer-texte, 
+    #footer-email{
         width: 47.5%;
     }
 
